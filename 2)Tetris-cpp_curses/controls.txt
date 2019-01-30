@@ -1,0 +1,3 @@
+Use arrows left/right to move blocks.
+Space to rotate blocks.
+Arrow down to drop block down.

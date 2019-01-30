@@ -1,0 +1,80 @@
+<html>
+<head>
+	<title>Wisieliec</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Wisielec</h1>
+	<div id="main">
+		<div id="game">
+			<p id="kat">Wybierz Kategorie:</p>
+			<input id="but1" type="button" value="Samochódy" onclick="init(1);">
+			<input id="but2" type="button" value="Zwierzęta" onclick="init(2);">
+			<input id="but3" type="button" value="Geografia" onclick="init(3);">
+			<table id="word">
+				<tr>
+                    <td id="w1">0</td>
+                    <td id="w2">0</td>
+                    <td id="w3">0</td>
+                    <td id="w4">0</td>
+                    <td id="w5">0</td>
+                    <td id="w6">0</td>
+                    <td id="w7">0</td>
+                    <td id="w8">0</td>
+                    <td id="w9">0</td>
+                    <td id="w10">0</td>
+                    <td id="w11">0</td>
+                </tr>
+			</table>
+			
+            <table id="table">
+                <tr>
+                    <td onclick="ans(1);">A</td><td onclick="ans(2);">Ą</td><td onclick="ans(3);">B</td><td onclick="ans(4);">C</td>
+                    <td onclick="ans(5);">Ć</td><td onclick="ans(6);">D</td><td onclick="ans(7);">E</td>
+                </tr>
+                <tr>
+                    <td onclick="ans(8);">Ę</td><td onclick="ans(9);">F</td><td onclick="ans(10);">G</td><td onclick="ans(11);">H</td>
+                    <td onclick="ans(12);">I</td><td onclick="ans(13);">J</td><td onclick="ans(14);">K</td>
+                </tr>
+                <tr>
+                   <td onclick="ans(15);">L</td><td onclick="ans(16);">Ł</td> <td onclick="ans(17);">M</td><td onclick="ans(18);">N</td>
+                    <td onclick="ans(19);">Ń</td><td onclick="ans(20);">O</td><td onclick="ans(21);">Ó</td>
+                </tr>
+                <tr>
+                    <td onclick="ans(22);">P</td><td onclick="ans(23);">R</td><td onclick="ans(24);">S</td><td onclick="ans(25);">Ś</td>
+                    <td onclick="ans(26);">T</td><td onclick="ans(27);">U</td><td onclick="ans(28);">W</td>
+                </tr>
+                <tr>
+                    <td onclick="ans(29);">Y</td><td onclick="ans(30);">Z</td><td onclick="ans(31);">Ż</td><td onclick="ans(32);">Ź</td>
+                    <td onclick="ans(0);">Q</td><td onclick="ans(33);">V</td><td onclick="ans(34);">X</td>
+                </tr>
+                </table>
+				<p id="gameover">GAME OVER!</p>
+				<p id="victory">VICTORY!</p>
+				<p id="answer"></p>
+				<input id="restart" type="button" value="RESTART" onclick="restart();">
+		</div>
+		<div id="game_status">
+			<p id="status">Status:</p>
+			<div id="img">
+				<img src="img/grafika0.png" id="img0" class="grafika">
+				<img src="img/grafika1.png" id="img1" class="grafika">
+				<img src="img/grafika2.png" id="img2" class="grafika">
+				<img src="img/grafika3.png" id="img3" class="grafika">
+				<img src="img/grafika4.png" id="img4" class="grafika">
+				<img src="img/grafika5.png" id="img5" class="grafika">
+			</div>
+			<p id="healthbar">&#9829;	&#9829;	&#9829;	&#9829;	&#9829;	</p>
+		</div>
+		<p id="fails"</p>
+		<div class="clear"></div>
+	</div>
+	<footer id="stopka">
+		© ANTON_ADAMOVYCH_3C
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
+
+

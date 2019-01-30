@@ -1,0 +1,177 @@
+body {
+	background-image: url(img/background.jpg);
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	margin-left: auto;
+    margin-right: auto;
+	width:1200px;
+	height: 820px;
+}
+h1{
+	margin-top: -1%;
+	background-color: #205A4B;
+	color: #C6D3A8;
+	width: 1000px;
+	height: 100px;
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+	font-size: 500%;
+	border: 1px solid black;
+}
+#answer{
+	border-bottom: 1px dotted grey;
+	text-align: center;
+}
+#fails{
+	color:red;
+}
+#main{
+	background-color: #8AB88C;
+	width: 960px;
+	height: 750px;
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: -4.5%;
+	border: 2px solid black;
+}
+#game{
+	height:748px;
+	width: 750px;
+	float: left;
+	border-left: 2px solid black;
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+}
+#gameover{
+	display: none;
+	font-size: 500%;
+	color: red;
+	text-align:center;
+}
+#victory{
+	display: none;
+	font-size: 500%;
+	color: blue;
+	text-align:center;
+}
+#img0{
+	
+}
+#img1{
+	display: none;
+}
+#img2{
+	display: none;
+}
+#img3{
+	display: none;
+}
+#img4{
+	display: none;
+}
+#img5{
+	display: none;
+}
+#img{
+	margin-left:35px;
+	margin-top:-10px;
+	border: 1px solid black;
+	margin-right:38px;
+}
+#healthbar{
+	margin-top:5px;
+	padding-left:42.5px;
+}
+#kat{
+	font-size: 145%;
+	border-bottom:1px double white;
+	text-align: center;
+	margin-top:3px;
+}
+#game_status{
+	float: left;
+	font-size: 145%;
+	margin-top:1px;
+	font-weight: 900;
+	width:200px;
+	height:240px;
+	border: 3px double white;
+}
+#status{
+	margin-top:1px;
+	margin-left:50px;
+}
+#stopka {
+	height: 20px;
+	width: 960px;
+	margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+	background-color: #205A4B;
+	border: 2px solid black;
+	color: black;
+}
+#but1,#but2,#but3,#restart{
+	background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	margin-left:80px;
+	margin-top:10px;
+}
+#restart{
+	display: none;
+}
+#word{
+	margin-left: auto;
+    margin-right: auto;
+    border: 3px double white;
+    border-collapse: collapse;
+	width: 400px;
+    height: 50px;
+	margin-bottom: 50px;
+	display: none;
+}
+#word  td{
+	border: 3px double white;
+}
+#word  tr{
+	border: 3px double white;
+}
+#table{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 300px;
+    height: 150px;
+    display: none;
+}
+#table tr{
+    border: 1px solid black;
+}
+#table td {
+    border: 1px solid black;
+    cursor: pointer;
+}
+#table td:hover{
+    background-color: #205A4B;
+}
+#word td:hover{
+    background-color: #C6D3A8;
+}
+#literka{
+	height: 5px;
+	width: 5px;
+	border: 1px solid black;
+}
+#healthbar{
+	color:red;
+}
+.clear {
+    clear: left;
+}

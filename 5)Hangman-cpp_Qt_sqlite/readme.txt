@@ -1,0 +1,1 @@
+You should download full folder with all dll's and subfolders to play game

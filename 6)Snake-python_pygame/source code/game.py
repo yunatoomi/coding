@@ -38,7 +38,7 @@ def menu():
         highscore = hfile.read()
     except FileNotFoundError:
         highscore = 0
-    DISPLAYSURF.fill((0, 150, 75))
+    DISPLAYSURF.fill((0, 150, 128))
     DISPLAYSURF.blit(font.render("Press SPACE to start new game,or ESC to exit.",True,(150, 0, 75)),(10,175))
     pygame.display.update()
     start = False
@@ -84,24 +84,25 @@ def spawn_food():
 
 def draw():
     global pole,font,height,width,highscore,time,ltime
-    DISPLAYSURF.fill((0, 150, 75))
+    DISPLAYSURF.fill((0, 150, 128))
     i = 0
     while i < width:
         j = 0
         while j < height:
             if pole[i][j] == 0:
-                color = (0, 150, 250)
+                color = (213, 215, 231)
             elif pole[i][j] == 1:
-                color = (0, 0, 250)
+                color = (255, 255, 255)
+                #color = (0, 0, 0)
             elif pole[i][j] == 2:
-                color = (255, 0, 0)
+                color = (0, 150, 250)
             elif pole[i][j] == 3:
-                color = (0, 255, 0)
+                color = (213, 105, 231)
             pygame.draw.rect(DISPLAYSURF,color,(i*20,j*20,20,20))
             j+=1
         i+=1
     ltime = pygame.time.get_ticks() /1000
-    DISPLAYSURF.blit(font.render("Score:"+str(length-3)+' '+"Highscore:"+str(highscore)+' '+"Time:"+str(round(ltime-time,2)),True,(150, 0, 75)),(10,357))
+    DISPLAYSURF.blit(font.render("Score:"+str(length-3)+' '+"Highscore:"+str(highscore)+' '+"Time:"+str(round(ltime-time,1))+'s',True,(150, 0, 75)),(10,357))
     pygame.display.update()
 
 def getevents():
